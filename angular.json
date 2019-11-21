@@ -90,7 +90,9 @@
               "projects/cv2019/src/favicon.ico",
               "projects/cv2019/src/assets"
             ],
-            "styles": ["projects/cv2019/src/styles.css"],
+            "styles": [
+              "projects/cv2019/src/styles.css"
+            ],
             "scripts": []
           }
         },
@@ -102,7 +104,9 @@
               "projects/cv2019/tsconfig.spec.json",
               "projects/cv2019/e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
@@ -116,6 +120,10 @@
               "devServerTarget": "cv2019:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
