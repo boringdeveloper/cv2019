@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100% !important;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  z-index: 200 !important;
+}

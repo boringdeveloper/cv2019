@@ -1,0 +1,175 @@
+<header class="intro-header">
+  <section
+    class="view intro-2 rgba-gradient"
+    [ngStyle]="{
+      backgroundImage: 'url(../assets/images/' + selected_project + '-bg.png)'
+    }"
+  >
+    <div class="full-bg-img">
+      <div class="container flex-center">
+        <div class="row">
+          <div class="col-md-4 text-center text-md-left margins">
+            <mdb-card>
+              <mdb-card-body>
+                <div class="row mb-2">
+                  <div class="col-lg-3 col-md-12">
+                    <img
+                      src="../assets/images/me_pic.png"
+                      class="img-fluid z-depth-1 rounded-circle"
+                      alt="Responsive image"
+                    />
+                  </div>
+                  <div class="col-lg-9">
+                    <mdb-card-title>
+                      <h5 class="m-0">
+                        Nichole John Romero
+                      </h5>
+                      <p class="blue-grey-text mb-2">
+                        <small>Web and Mobile Developer</small>
+                      </p>
+                    </mdb-card-title>
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col mb-sm-1">
+                        <button
+                          mdbBtn
+                          type="button"
+                          color="mdb-color"
+                          size="sm"
+                          block="true"
+                          mdbWavesEffect
+                        >
+                          Projects
+                        </button>
+                      </div>
+                      <div class="col">
+                        <button
+                          mdbBtn
+                          type="button"
+                          color="blue-grey"
+                          size="sm"
+                          block="true"
+                          mdbWavesEffect
+                        >
+                          Experiences
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="grey-text mt-2 mb-2" />
+
+                <mdb-card-text class="mb-0">
+                  <p>
+                    <i
+                      ><small
+                        >"Believes that giving or sharing knowledge will not
+                        only benefit the receiver but the giver as well."</small
+                      ></i
+                    >
+                  </p>
+
+                  <hr class="grey-text mt-2 mb-2" />
+
+                  <p>
+                    <b
+                      style="font-size: x-large;"
+                      class="d-none d-lg-inline d-xl-inline"
+                      >Hey there!</b
+                    >
+                    <b
+                      style="font-size: larger;"
+                      class="d-none d-md-inline d-lg-none"
+                      >Hey there!</b
+                    >
+                    I am a web and mobile developer who loves to innovate,
+                    learning new things and brainstorming with other people.
+                    Exchanging ideas for me is a great way to exercise the
+                    creative mind. I am also always up for challenges.
+                  </p>
+
+                  <hr class="grey-text mt-2 mb-2" />
+
+                  <div class="d-none d-lg-block d-xl-block">
+                    <p><b style="font-size: larger;">Let's get in touch</b></p>
+                    <p>Contact Number: (+63) 9167433988</p>
+                    <p>Email Address: romero.nicholejohn@gmail.com</p>
+                  </div>
+
+                  <div class=" social-icons">
+                    <a
+                      href="https://www.linkedin.com/in/nichole-john-talban-romero/"
+                      target="_blank"
+                    >
+                      <img src="../assets/images/linkedin.svg" />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/nickrgamer04"
+                      target="_blank"
+                      ><img src="../assets/images/facebook-circular-logo.svg"
+                    /></a>
+                    <a
+                      href="https://drive.google.com/uc?id=1LL0OSzCk-hThHm295gTYscJBj4i6WhsE&export=download"
+                      target="_blank"
+                    >
+                      <img src="../assets/images/download.svg"
+                    /></a>
+                  </div>
+                </mdb-card-text>
+              </mdb-card-body>
+            </mdb-card>
+          </div>
+
+          <div class="col-md-8 d-flex justify-content-center">
+            <div class="row white-text">
+              <div class="col-md-12">
+                <img
+                  [src]="'../assets/images/' + selected_project + '.png'"
+                  alt=""
+                  class="img-fluid z-depth-1 w-100 project-image"
+                />
+              </div>
+              <div class="col-md-12 mt-2">
+                <h2 class="h2-responsive">
+                  {{ selected_project.toUpperCase() }}
+                </h2>
+                <hr class="hr-light" />
+                <h6>
+                  {{ selected_project_desc }}
+                </h6>
+                <h6>
+                  <small><b>Roles: </b> {{ selected_project_role }}</small>
+                </h6>
+                <h6>
+                  <small><b>Languages: </b> {{ selected_project_tools }}</small>
+                </h6>
+              </div>
+              <div class="col-md-6">
+                <a
+                  mdbBtn
+                  color="mdb-color"
+                  size="sm"
+                  class="w-100"
+                  (click)="pandabooks()"
+                ></a>
+              </div>
+              <div class="col-md-6">
+                <a
+                  mdbBtn
+                  color="blue-grey"
+                  size="sm"
+                  class="w-100"
+                  (click)="tinderow()"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>

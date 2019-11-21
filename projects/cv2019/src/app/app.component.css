@@ -1,0 +1,66 @@
+.intro-header {
+  height: unset !important;
+}
+
+.intro-2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: cover;
+}
+
+.view {
+  height: 100vh !important;
+}
+
+button {
+  border-radius: 25px;
+}
+
+.project-image {
+  border-radius: 15px 15px 2px 2px; /* top-left, top-right, bottom-right, bottom-left */
+}
+
+mdb-card {
+  border-radius: 15px;
+}
+
+.social-icons > a > img {
+  width: 25px;
+  display: inline;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #424f95 !important;
+  }
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+.rgba-gradient .full-bg-img {
+  background: linear-gradient(
+    45deg,
+    rgba(42, 27, 161, 0.6),
+    rgba(29, 210, 177, 0.6) 100%
+  );
+}
+
+@media (max-width: 450px) {
+  .margins {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+    height: 1020px;
+  }
+}
